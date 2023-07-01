@@ -19,3 +19,9 @@ that i will use
 ";
 
 print $crazy;
+
+# opendir my $dir, "/usr/bin" or die "cannot open directory: $!";
+my @files = glob( '/usr/bin/s*' );
+# closedir $dir;
+
+map { print "found s* bin: $_\n" } @files;
