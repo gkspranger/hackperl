@@ -5,6 +5,7 @@ help:
 	@echo "make i					install required modules"
 	@echo "make x					execute script"
 	@echo "make p					pack script"
+	@echo "make t					format/lint script"
 
 r:
 	@rm -fr lib/
@@ -18,3 +19,7 @@ x:
 p:
 	@export PERL5LIB=$$PWD/lib/perl5 && \
 	./bin/fatpack pack app.pl > app.packed.pl
+
+t:
+	@export PERL5LIB=$$PWD/lib/perl5 && \
+	./bin/perltidy *.pl
