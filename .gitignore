@@ -36,3 +36,8 @@ inc/
 
 /lib/
 /man/
+
+*/lib/perl5/*
+*/bin/*
+*/man/*
+*/fatlib/*

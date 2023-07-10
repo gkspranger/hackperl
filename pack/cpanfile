@@ -1,0 +1,3 @@
+requires "CMD::Colors";
+requires "Modern::Perl";
+requires "App::FatPacker";
